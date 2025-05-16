@@ -120,4 +120,21 @@
     #kontakt .contact-form h3 {
         font-size: 1.6em;
     }
+    /* style_kontakt.css */
+
+/* ... inne style ... */
+
+    .contact-image {
+        margin-top: 30px;
+        border-radius: 8px;
+        overflow: hidden; /* Jeśli zdjęcie ma zaokrąglone rogi */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .contact-image img {
+        display: block;
+        width: 100%;
+        height: auto; /* Zachowaj proporcje obrazu */
+    }
+
 }
