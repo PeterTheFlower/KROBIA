@@ -1,0 +1,123 @@
+/* Style specyficzne dla strony kontaktowej */
+#kontakt {
+    padding: 30px 0;
+}
+
+#kontakt h2 {
+    font-size: 2.4em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #28a745;
+    font-weight: 500;
+}
+
+#kontakt .section-description {
+    text-align: center;
+    color: #6c757d;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+#kontakt .contact-details {
+    margin-bottom: 30px;
+    font-size: 1.1em;
+    color: #555;
+    text-align: center;
+}
+
+#kontakt .contact-details i {
+    margin-right: 8px;
+    color: #28a745;
+}
+
+#kontakt .contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    border: 1px solid #dee2e6;
+}
+
+#kontakt .contact-form h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #343a40;
+    font-weight: 500;
+    text-align: center;
+}
+
+#kontakt .contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+#kontakt .contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #343a40;
+    font-weight: bold;
+    font-size: 0.95em;
+}
+
+#kontakt .contact-form input[type="text"],
+#kontakt .contact-form input[type="email"],
+#kontakt .contact-form input[type="tel"],
+#kontakt .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+#kontakt .contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+#kontakt .contact-form .btn-primary {
+    display: block;
+    width: 100%;
+    background-color: #007bff; /* Niebieski przycisk formularza */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#kontakt .contact-form .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Style dla linków w contact-details */
+#kontakt .contact-details a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#kontakt .contact-details a:hover {
+    text-decoration: underline;
+}
+
+/* Responsywność dla mniejszych ekranów */
+@media (max-width: 768px) {
+    #kontakt h2 {
+        font-size: 2em;
+    }
+
+    #kontakt .section-description {
+        font-size: 1em;
+    }
+
+    #kontakt .contact-form {
+        padding: 20px;
+    }
+
+    #kontakt .contact-form h3 {
+        font-size: 1.6em;
+    }
+}
