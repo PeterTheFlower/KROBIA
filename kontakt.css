@@ -7,7 +7,7 @@
     font-size: 2.4em;
     margin-bottom: 20px;
     text-align: center;
-    color: #28a745;
+    color: --primary-green;
     font-weight: 500;
 }
 
@@ -27,7 +27,7 @@
 
 #kontakt .contact-details i {
     margin-right: 8px;
-    color: #28a745;
+    color: --primary-green;
 }
 
 #kontakt .contact-form {
