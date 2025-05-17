@@ -1,5 +1,5 @@
  .property-header {
-            background-color: #28a745;
+            background-color: #115120;
             color: white;
             padding: 20px 0;
             margin-bottom: 20px;
@@ -43,7 +43,7 @@
         
         .main-image {
             width: 100%;
-            height: 350px;
+            height: 550px;
             object-fit: cover;
             border-radius: 8px;
             cursor: pointer;
@@ -68,7 +68,7 @@
         }
         
         .thumbnail.active {
-            border-color: #28a745;
+            border-color: #115120;
         }
         
         .thumbnail:hover {
@@ -97,7 +97,7 @@
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            color: #28a745;
+            color: #115120;
             font-size: 1.2em;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
             transition: all 0.3s;
@@ -138,7 +138,7 @@
         }
         
         .detail-group h3 {
-            border-bottom: 2px solid #28a745;
+            border-bottom: 2px solid #115120;
             padding-bottom: 8px;
             margin-bottom: 15px;
             color: #343a40;
@@ -191,12 +191,12 @@
         }
         
         .btn-primary {
-            background-color: #28a745;
+            background-color: #115120;
             color: white;
         }
         
         .btn-primary:hover {
-            background-color: #218838;
+            background-color: #115120;
         }
         
         .btn-secondary {
@@ -235,7 +235,7 @@
         }
         
         .similar-properties h2 {
-            border-bottom: 2px solid #28a745;
+            border-bottom: 2px solid #115120;
             padding-bottom: 10px;
             margin-bottom: 20px;
             font-size: 1.5em;
@@ -314,7 +314,7 @@
             padding: 15px;
             border-radius: 6px;
             margin-top: 10px;
-            border-left: 4px solid #28a745;
+            border-left: 4px solid #115120;
             animation: fadeIn 0.3s ease-out;
         }
         .property-map {
@@ -362,6 +362,47 @@
         padding: 8px 12px;
     }
 }
+@media (min-width: 769px) {
+    /* ... inne style dla większych ekranów ... */
+
+    .similar-properties .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Dostosuj minmax w zależności od preferowanej szerokości */
+        gap: 20px;
+    }
+
+    .property-details {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .property-description {
+        /* Możesz dodać tutaj style, aby kontrolować jego szerokość, jeśli to konieczne */
+    }
+
+    .property-map {
+        /* Możesz dostosować marginesy, jeśli to konieczne */
+        height: auto; /* Pozwól na automatyczną wysokość */
+    }
+
+    .main-content-area {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        margin-bottom: 30px;
+        align-items: start; /* Dodaj to, aby wyrównać elementy w pionie od góry */
+    }
+
+    .property-description {
+        /* Umieść opis w pierwszej kolumnie */
+    }
+
+    .property-map-container {
+        /* Umieść mapę w drugiej kolumnie */
+    }
+    .property-map iframe {
+        height: 400px; /* Ustaw wyższą wartość */
+    }
+
 
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(-10px); }
@@ -373,11 +414,11 @@
         }
 
         .contact-info a {
-            color: #28a745;
+            color: #115120;
             text-decoration: none;
             font-weight: bold;
         }
 
         .contact-info a:hover {
             text-decoration: underline;
-        }
+        }}

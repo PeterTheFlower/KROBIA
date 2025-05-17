@@ -1,20 +1,33 @@
+:root {
+    --primary-green: #115120;
+    --light-gray: #f8f9fa;
+    --dark-gray: #495057;
+    --border-color: #dee2e6;
+    --text-secondary: #6c757d;
+    --blue: #007bff;
+    --blue-hover: #0056b3;
+    --box-shadow-light: 0 4px 8px rgba(0, 0, 0, 0.05);
+    --box-shadow-medium: 0 6px 12px rgba(0, 0, 0, 0.1);
+    --transition-default: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa; /* Jasnoszary tło */
-    color: #495057; /* Ciemnoszary tekst */
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
     line-height: 1.7;
 }
 
 .container {
-    max-width: 1140px; /* Standardowa szerokość kontenera Bootstrap */
+    max-width: 1140px;
     margin: 0 auto;
     padding: 20px;
 }
 
 header {
-    background-color: #28a745; /* Zielony nagłówek */
+    background-color: var(--primary-green);
     color: white;
     padding: 40px 0;
     text-align: center;
@@ -33,8 +46,8 @@ header .subheader {
 }
 
 nav {
-    background-color: #e9ecef; /* Jasnoszary pasek nawigacji */
-    border-bottom: 1px solid #dee2e6;
+    background-color: #e9ecef;
+    border-bottom: 1px solid var(--border-color);
 }
 
 nav .container ul {
@@ -53,13 +66,14 @@ nav .container ul li a {
     display: block;
     padding: 15px 20px;
     text-decoration: none;
-    color: #495057;
+    color: var(--dark-gray);
     font-weight: 500;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: var(--transition-default);
 }
 
-nav .container ul li a:hover, nav .container ul li a.active-tab {
-    background-color: #28a745;
+nav .container ul li a:hover,
+nav .container ul li a.active-tab {
+    background-color: var(--primary-green);
     color: white;
 }
 
@@ -75,17 +89,19 @@ main {
     display: block;
 }
 
-.listings h2, #kontakt h2 {
+.listings h2,
+#kontakt h2 {
     font-size: 2.4em;
     margin-bottom: 20px;
     text-align: center;
-    color: #28a745;
+    color: var(--primary-green);
     font-weight: 500;
 }
 
-.listings .section-description, #kontakt .section-description {
+.listings .section-description,
+#kontakt .section-description {
     text-align: center;
-    color: #6c757d;
+    color: var(--text-secondary);
     margin-bottom: 30px;
     font-size: 1.1em;
 }
@@ -100,15 +116,15 @@ main {
 .listing-item {
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    box-shadow: var(--box-shadow-light);
     overflow: hidden;
-    transition: transform 0.3s ease-in-out;
-    border: 1px solid #dee2e6;
+    transition: var(--transition-default);
+    border: 1px solid var(--border-color);
 }
 
 .listing-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--box-shadow-medium);
 }
 
 .image-container {
@@ -136,8 +152,9 @@ main {
     font-weight: 500;
 }
 
-.details .location, .details .area {
-    color: #6c757d;
+.details .location,
+.details .area {
+    color: var(--text-secondary);
     font-size: 0.95em;
     margin-bottom: 8px;
 }
@@ -152,13 +169,13 @@ main {
 .details .price {
     font-size: 1.2em;
     font-weight: bold;
-    color: #28a745;
+    color: var(--primary-green);
     margin-bottom: 15px;
 }
 
 .details .button {
     display: inline-block;
-    background-color: #007bff; /* Niebieski przycisk */
+    background-color: var(--blue);
     color: white;
     padding: 12px 20px;
     text-decoration: none;
@@ -170,7 +187,7 @@ main {
 }
 
 .details .button:hover {
-    background-color: #0056b3;
+    background-color: var(--blue-hover);
 }
 
 .pagination {
@@ -185,14 +202,15 @@ main {
     border: 1px solid #ddd;
     border-radius: 6px;
     text-decoration: none;
-    color: #495057;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    color: var(--dark-gray);
+    transition: var(--transition-default);
 }
 
-.pagination a.active, .pagination a:hover {
-    background-color: #28a745;
+.pagination a.active,
+.pagination a:hover {
+    background-color: var(--primary-green);
     color: white;
-    border-color: #28a745;
+    border-color: var(--primary-green);
 }
 
 #kontakt .contact-details {
@@ -203,7 +221,7 @@ main {
 
 #kontakt .contact-details i {
     margin-right: 8px;
-    color: #28a745;
+    color: var(--primary-green);
 }
 
 #kontakt .contact-form {
@@ -213,7 +231,7 @@ main {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-    border: 1px solid #dee2e6;
+    border: 1px solid var(--border-color);
 }
 
 #kontakt .contact-form .form-group {
@@ -243,7 +261,7 @@ main {
 }
 
 #kontakt .contact-form button[type="submit"] {
-    background-color: #007bff; /* Niebieski przycisk formularza */
+    background-color: var(--blue);
     color: white;
     padding: 12px 20px;
     border: none;
@@ -254,11 +272,11 @@ main {
 }
 
 #kontakt .contact-form button[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: var(--blue-hover);
 }
 
 footer {
-    background-color: #343a40; /* Ciemnoszary footer */
+    background-color: #343a40;
     color: #e9ecef;
     text-align: center;
     padding: 30px 0;
@@ -267,7 +285,7 @@ footer {
 }
 
 footer a {
-    color: #28a745; /* Zielone linki w footerze */
+    color: var(--primary-green);
     text-decoration: none;
 }
 
@@ -275,10 +293,16 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Style dla ikon Font Awesome */
-.fa-map-marker-alt, .fa-ruler-combined, .fa-user, .fa-phone, .fa-envelope {
+.fa-map-marker-alt,
+.fa-ruler-combined,
+.fa-user,
+.fa-phone,
+.fa-envelope,
+.fa-chevron-left,
+.fa-chevron-right,
+.fa-external-link-alt {
     margin-right: 8px;
-    color: #28a745; /* Zielone ikony */
+    color: var(--primary-green);
 }
 
 /* Responsywność dla mniejszych ekranów */
@@ -310,12 +334,14 @@ footer a:hover {
         text-align: center;
     }
 
-    .listings h2, #kontakt h2 {
+    .listings h2,
+    #kontakt h2 {
         font-size: 2em;
         margin-bottom: 15px;
     }
 
-    .listings .section-description, #kontakt .section-description {
+    .listings .section-description,
+    #kontakt .section-description {
         font-size: 1em;
         margin-bottom: 20px;
     }
