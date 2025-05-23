@@ -119,32 +119,36 @@ body.no-scroll {
 }
 
 .gallery-nav {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 10px;
-    pointer-events: none;
+  left: 0;
+  right: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  pointer-events: none;
+  width: 100%;
+  box-sizing: border-box; /* zapobiega rozszerzaniu */
 }
 
 .gallery-nav button {
-    pointer-events: all;
-    background-color: rgba(255, 255, 255, 0.8);
-    border: none;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    color: var(--primary-green);
-    font-size: 1rem;
-    box-shadow: var(--box-shadow-light);
-    transition: var(--transition-default);
-    -webkit-tap-highlight-color: transparent;
+  pointer-events: all;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--primary-green);
+  font-size: 1rem;
+  box-shadow: var(--box-shadow-light);
+  transition: var(--transition-default);
+  -webkit-tap-highlight-color: transparent;
 }
 
 .gallery-nav button:hover {
