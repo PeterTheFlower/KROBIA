@@ -51,7 +51,7 @@ main .container{
 .property-header .container {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
 }
 
 .property-header h1 {
@@ -594,5 +594,11 @@ main .container{
 
   .gallery-nav button {
     margin: 0;
+  }
+  .price-container {
+    align-items: flex-end;  /* zawartość kontenera do prawej */
+    margin-left: auto;      /* cały kontener przesunięty do prawej */
+    text-align: right;      /* tekst w prawo */
+    width: fit-content;     /* niech nie zajmuje całej szerokości */
   }
 }
