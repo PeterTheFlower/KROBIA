@@ -28,7 +28,7 @@ body.no-scroll {
 
 main .container{
     align-items: center;
-    align-content: center;
+    justify-content: center;
 }
 .container {
     width: 100%;
@@ -44,6 +44,7 @@ main .container{
     background-color: var(--primary-green);
     color: white;
     padding: 20px 0;
+    padding-top: 10px;
     margin-bottom: 20px;
 }
 
