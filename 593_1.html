@@ -3,21 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Działka budowlana na sprzedaż w Krobi, ul. Kobylińska. Sprawdź szczegóły oferty!">
-    <title>Działka budowlana 593/1 Krobia | Krobia Osiedle Zielone</title>
+    <title>Działka budowlana Krobia | Krobia Osiedle Zielone</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style_dzialki.css">
-    <link rel="stylesheet" href="script.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Przeniesiono skrypty Font Awesome do head -->
 </head>
 <body>
     <header>
         <div class="container">
-            <a href="index.html" class="logo-link">
-                <img src="images/logo.jpeg" alt="Logo Krobia Osiedle Zielone" class="header-logo">
-                <h1>Krobia Osiedle Zielone</h1>
-            </a>
+            <img src="images/logo.jpeg" alt="Logo Krobia Osiedle Zielone" class="header-logo">
+            <h1>Krobia Osiedle Zielone</h1>
         </div>
         <p class="subheader">Wyjątkowe działki budowlane w malowniczej Krobii.</p>
     </header>
@@ -32,151 +27,140 @@
     </nav>
 
     <main class="container">
-        <!-- Sekcja nagłówka -->
-        <section class="property-header">
-            <h1>Sprzedam działkę budowlaną 593/1 Krobia ul. Kobylińska, powiat Gostyń</h1>
-            <div class="price-container">
-                <div class="price-tag">184 705 zł</div>
-                <div class="price-per-m2">205 zł/m²</div>
-            </div>
-        </section>
-        
-        <!-- Galeria -->
-        <section class="property-gallery" aria-label="Galeria zdjęć działki">
-            <div class="gallery-wrapper">
-                <img id="mainImage" src="images/593_1.jpg" alt="Działka budowlana Krobia - widok główny" class="main-image">
-                <div class="gallery-nav">
-                    <button id="prevBtn" aria-label="Poprzednie zdjęcie"><i class="fas fa-chevron-left"></i></button>
-                    <button id="nextBtn" aria-label="Następne zdjęcie"><i class="fas fa-chevron-right"></i></button>
-                </div>
-                <div class="thumbnail-container">
-                    <img src="images/593_1.jpg" alt="Miniatura 1" class="thumbnail active" data-full="images/593_1.jpg" loading="lazy">
-                    <img src="images/IMG_2444.JPG" alt="Miniatura 2" class="thumbnail" data-full="images/IMG_2444.JPG" loading="lazy">
-                    <img src="images/IMG_2433.JPG" alt="Miniatura 3" class="thumbnail" data-full="images/IMG_2433.JPG" loading="lazy">
-                    <img src="images/IMG_2438.JPG" alt="Miniatura 4" class="thumbnail" data-full="images/IMG_2438.JPG" loading="lazy">
-                    <img src="images/593_zdj.png" alt="Miniatura 5" class="thumbnail" data-full="images/593_zdj.png" loading="lazy">
+        <div class="property-header">
+            <div class="container">
+                <h1>Sprzedam działkę budowlaną 593/1 Krobia, Gostyń</h1>
+                <div class="price-container">
+                    <div class="price-tag">184 705 zł</div>
+                    <div class="price-per-m2">205 zł/m²</div>
                 </div>
             </div>
-        </section>
-        
-        <!-- Adres -->
-        <div class="property-address">
-            <p><i class="fas fa-map-marker-alt"></i> <span>ul. Kobylińska, Krobia, gostyński, wielkopolskie</span></p>
         </div>
         
-        <!-- Szczegóły -->
-        <section class="property-details">
+        <div class="property-gallery">
+            <img id="mainImage" src="images/593_1.jpg" alt="Działka budowlana Krobia" class="main-image">
+            <div class="gallery-nav">
+                <button id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                <button id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="thumbnail-container">
+                <img src="images/593_1.jpg" alt="Miniatura 1" class="thumbnail active" data-full="images/593_1.jpg">
+                <img src="images/IMG_2444.JPG" alt="Miniatura 2" class="thumbnail" data-full="images/IMG_2444.JPG">
+                <img src="images/IMG_2433.JPG" alt="Miniatura 3" class="thumbnail" data-full="images/IMG_2433.JPG">
+                <img src="images/IMG_2438.JPG" alt="Miniatura 4" class="thumbnail" data-full="images/IMG_2438.JPG">
+                <img src="images/593_zdj.png" alt="Miniatura 5" class="thumbnail" data-full="images/593_zdj.png">
+            </div>
+        </div>
+        
+        <div class="property-address">
+            <p><i class="fas fa-map-marker-alt"></i> ul. Kobylińska, Krobia, Krobia, gostyński, wielkopolskie</p>
+        </div>
+        
+        <div class="property-details">
             <div class="details-column">
-                <article class="detail-group">
-                    <h2>Podstawowe informacje</h2>
-                    <dl>
-                        <div class="detail-item">
-                            <dt>Typ oferty:</dt>
-                            <dd>na sprzedaż</dd>
-                        </div>
-                        <div class="detail-item">
-                            <dt>Powierzchnia:</dt>
-                            <dd>858 m²</dd>
-                        </div>
-                        <div class="detail-item">
-                            <dt>Typ działki:</dt>
-                            <dd>budowlana</dd>
-                        </div>
-                        <div class="detail-item">
-                            <dt>Położenie:</dt>
-                            <dd>Krobia, ul. Kobylińska</dd>
-                        </div>
-                    </dl>
-                </article>
+                <div class="detail-group">
+                    <h3>Podstawowe informacje</h3>
+                    <div class="detail-item">
+                        <span class="detail-label">Typ oferty:</span>
+                        <span class="detail-value">na sprzedaż</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Powierzchnia:</span>
+                        <span class="detail-value">858 m²</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Typ działki:</span>
+                        <span class="detail-value">budowlana</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Położenie:</span>
+                        <span class="detail-value">Krobia, ul. Kobylińska</span>
+                    </div>
+                </div>
                 
-                <article class="detail-group">
-                    <h2>Media</h2>
-                    <dl>
-                        <div class="detail-item">
-                            <dt>Prąd:</dt>
-                            <dd>w drodze</dd>
-                        </div>
-                        <div class="detail-item">
-                            <dt>Woda:</dt>
-                            <dd>w drodze</dd>
-                        </div>
-                        <div class="detail-item">
-                            <dt>Gaz:</dt>
-                            <dd>w drodze</dd>
-                        </div>
-                        <div class="detail-item">
-                            <dt>Kanalizacja:</dt>
-                            <dd>w drodze</dd>
-                        </div>
-                    </dl>
-                </article>
+                <div class="detail-group">
+                    <h3>Media</h3>
+                    <div class="detail-item">
+                        <span class="detail-label">Prąd:</span>
+                        <span class="detail-value">w drodze</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Woda:</span>
+                        <span class="detail-value">w drodze</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Gaz:</span>
+                        <span class="detail-value">w drodze</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Kanalizacja:</span>
+                        <span class="detail-value">w drodze</span>
+                    </div>
+                </div>
             </div>
             
             <div class="details-column">
-                <article class="detail-group">
-                    <h2>Parametry działki</h2>
-                    <dl>
-                        <div class="detail-item">
-                            <dt>Wymiary:</dt>
-                            <dd>28,34 x 30,64 m</dd>
-                        </div>
-                        <div class="detail-item">
-                            <dt>Ogrodzenie:</dt>
-                            <dd>brak</dd>
-                        </div>
-                        <div class="detail-item">
-                            <dt>Dojazd:</dt>
-                            <dd>prywatna droga wewnętrzna</dd>
-                        </div>
-                        <div class="detail-item">
-                            <dt>Typ ogłoszeniodawcy:</dt>
-                            <dd>prywatny</dd>
-                        </div>
-                    </dl>
-                </article>
+                <div class="detail-group">
+                    <h3>Parametry działki</h3>
+                    <div class="detail-item">
+                        <span class="detail-label">Wymiary:</span>
+                        <span class="detail-value">28,34 x 30,64 m</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Ogrodzenie:</span>
+                        <span class="detail-value">brak</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Dojazd:</span>
+                        <span class="detail-value">prywatna droga wewnętrzna</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Typ ogłoszeniodawcy:</span>
+                        <span class="detail-value">prywatny</span>
+                    </div>
+                </div>
                 
-                <article class="detail-group">
-                    <h2>Dokumenty</h2>
-                    <dl>
-                        <div class="detail-item">
-                            <dt>Miejscowy Plan Zagospodarowania Przestrzennego:</dt>
-                            <dd>MPZP Krobia miasto VII, nr 013, tereny 1MN.</dd>
-                        </div>
-                        <div class="detail-item">
-                            <dt>Warunki zabudowy:</dt>
-                            <dd>zgodnie z MPZP</dd>
-                        </div>
-                        <div class="detail-item">
-                            <dt>Warunki przyłączeń:</dt>
-                            <dd>uzgodnione z Enea, uzgodnione zjazdy ze Starostwem Powiatowym w Gostyniu.</dd>
-                        </div>
-                        <div class="detail-item">
-                            <dt>Woda i Kanalizacja:</dt>
-                            <dd>uzgodnione z Międzygminnym Związkiem Wodociągów i Kanalizacji</dd>
-                        </div>
-                        <div class="detail-item">
-                            <dt>Link do pobrania Planu Zagospodarowania Przestrzennego:</dt>
-                            <dd>
-                                <a href="http://www.biuletyn.net/nt-bin/_private/krobia/3355.pdf" target="_blank" rel="noopener noreferrer">
-                                    Kliknij i pobierz <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </dd>
-                        </div>
-                        <div class="detail-item">
-                            <dt>Link do pobrania mapy z MPZP:</dt>
-                            <dd>
-                                <a href="http://www.biuletyn.net/nt-bin/_private/krobia/4187.jpg" target="_blank" rel="noopener noreferrer">
-                                    Kliknij i pobierz <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </dd>
-                        </div>
-                    </dl>
-                </article>
+                <div class="detail-group">
+                    <h3>Dokumenty</h3>
+                    <div class="detail-item">
+                        <span class="detail-label">Miejscowy Plan Zagospodarowania Przestrzennego:</span>
+                        <span class="detail-value">MPZP Krobia miasto VII, nr 013, tereny 1MN.</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Warunki zabudowy:</span>
+                        <span class="detail-value">zgodnie z MPZP</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Warunki przyłączeń:</span>
+                        <span class="detail-value">uzgodnione z Enea, uzgodnione zjazdy ze Starostwem Powiatowym w Gostyniu.</span>
+                    </div>
+                     <div class="detail-item">
+                        <span class="detail-label">Woda i Kanalizacja:</span>
+                        <span class="detail-value">uzgodnione z Międzygminnym Związkiem Wodociągów i Kanalizacji</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Linkt do pobrania Planu Zagospodarownania Przestrzennego:</span>
+                        <span class="detail-value">
+                        <a href="http://www.biuletyn.net/nt-bin/_private/krobia/3355.pdf" target="_blank" rel="noopener noreferrer">
+                            Kliknij i pobierz <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        </span>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-b3/js/all.min.js"></script>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Linkt do pobrania mapy z MPZP:</span>
+                        <span class="detail-value">
+                        <a href="http://www.biuletyn.net/nt-bin/_private/krobia/4187.jpg" target="_blank" rel="noopener noreferrer">
+                            Kliknij i pobierz <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-b3/js/all.min.js"></script>
+                        </span>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
         
-        <!-- Opis -->
-        <article class="property-description">
+        <div class="property-description">
             <h2>Opis działki</h2>
             <p>Piekna działka budowlana w spokojnej i malowniczej okolicy, bezpośrednio przy asfaltowej drodze. Wszystkie media w drodze. Dla terenu obowiązuje Miejscowy Plan Zagospodarowania Przestrzennego MPZP 013, tereny 1MN.</p>
             
@@ -188,22 +172,21 @@
             
             <div class="action-buttons">
                 <div class="button-group">
-                    <button class="btn btn-primary" id="callBtn"><i class="fas fa-phone"></i> Zadzwoń</button>
+                    <a href="#" class="btn btn-primary" id="callBtn"><i class="fas fa-phone"></i> Zadzwoń</a>
                     <div class="contact-info" id="phoneInfo">
                         <i class="fas fa-phone"></i> <a href="tel:+48516026900">+48 516 026 900</a>
                     </div>
                 </div>
                 
                 <div class="button-group">
-                    <button class="btn btn-primary" id="emailBtn"><i class="fas fa-envelope"></i> Wyślij wiadomość</button>
+                    <a href="#" class="btn btn-primary" id="emailBtn"><i class="fas fa-envelope"></i> Wyślij wiadomość</a>
                     <div class="contact-info" id="emailInfo">
                         <i class="fas fa-envelope"></i> <a href="mailto:info@kk7.pl">info@kk7.pl</a>
                     </div>
                 </div>
             </div>
-        </article>
+        </div>
         
-        <!-- Mapa -->
         <section class="property-map" aria-label="Lokalizacja działki">
             <div class="map-container">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2468.795320045772!2d17.0022333!3d51.7733489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4705728c531d3aed%3A0x63128d412825dd95!2sKobyli%C5%84ska%2C%2063-840%20Krobia!5e0!3m2!1spl!2spl!4v1747390483170!5m2!1spl!2spl" 
@@ -216,14 +199,12 @@
                 </div>
             </div>
         </section>
-        
-        <!-- Podobne oferty -->
-        <section class="similar-properties" aria-label="Podobne działki w okolicy">
-            <h2>Podobne działki w okolicy</h2>
+        <div class="similar-properties">
+            <h2>Sąsiednie działki</h2>
             <div class="grid-container">
-                <article class="listing-item">
+                <div class="listing-item">
                     <div class="image-container">
-                        <img src="images/593_2.jpg" alt="Działka nr 593/2" loading="lazy">
+                        <img src="images/593_2.jpg" alt="Podobna działka 1">
                     </div>
                     <div class="details">
                         <h3>Działka nr 593/2</h3>
@@ -232,11 +213,11 @@
                         <p class="price">175 890 PLN</p>
                         <a href="593_2.html" class="button">Zobacz więcej</a>
                     </div>
-                </article>
+                </div>
                 
-                <article class="listing-item">
+                <div class="listing-item">
                     <div class="image-container">
-                        <img src="images/593_3.jpg" alt="Działka nr 593/3" loading="lazy">
+                        <img src="images/593_3.jpg" alt="Podobna działka 2">
                     </div>
                     <div class="details">
                         <h3>Działka nr 593/3</h3>
@@ -245,32 +226,32 @@
                         <p class="price">176 300 PLN</p>
                         <a href="593_3.html" class="button">Zobacz więcej</a>
                     </div>
-                </article>
+                </div>
                 
-                <article class="listing-item">
+                <div class="listing-item">
                     <div class="image-container">
-                        <img src="images/593_2.jpg" alt="Działka nr 655/7" loading="lazy">
+                        <img src="images/655_7.jpg" alt="Podobna działka 3">
                     </div>
                     <div class="details">
-                        <h3>Działka nr 655/7</h3>
+                        <h3>Działka nr 655/6</h3>
                         <p class="location"><i class="fas fa-map-marker-alt"></i> Krobia, Wielkopolska</p>
-                        <p class="area"><i class="fas fa-ruler-combined"></i> Powierzchnia: 1095 m²</p>
-                        <p class="price">224 475 PLN</p>
-                        <a href="655_7.html" class="button">Zobacz więcej</a>
+                        <p class="area"><i class="fas fa-ruler-combined"></i> Powierzchnia: 1032 m²</p>
+                        <p class="price">211 560 PLN</p>
+                        <a href="655_6.html" class="button">Zobacz więcej</a>
                     </div>
-                </article>
+                </div>
             </div>
-        </section>
+        </div>
     </main>
 
     <!-- Lightbox -->
-    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Powiększone zdjęcie">
+    <div class="lightbox" id="lightbox">
         <div class="lightbox-content">
-            <button class="lightbox-close" aria-label="Zamknij">&times;</button>
+            <span class="lightbox-close">&times;</span>
             <img src="" alt="" class="lightbox-img" id="lightboxImg">
             <div class="lightbox-nav">
-                <button id="lightboxPrev" aria-label="Poprzednie zdjęcie"><i class="fas fa-chevron-left"></i></button>
-                <button id="lightboxNext" aria-label="Następne zdjęcie"><i class="fas fa-chevron-right"></i></button>
+                <button id="lightboxPrev"><i class="fas fa-chevron-left"></i></button>
+                <button id="lightboxNext"><i class="fas fa-chevron-right"></i></button>
             </div>
         </div>
     </div>
@@ -280,8 +261,142 @@
             <p>&copy; 2025 Zielona Krobia. Wszelkie prawa zastrzeżone.</p>
         </div>
     </footer>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
-    <script src="scripts.js" defer></script>
+    <script>
+    const mainImage = document.getElementById('mainImage');
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxClose = document.querySelector('.lightbox-close');
+    const lightboxPrev = document.getElementById('lightboxPrev');
+    const lightboxNext = document.getElementById('lightboxNext');
+
+    let currentImageIndex = 0;
+    const images = Array.from(thumbnails).map(thumb => thumb.dataset.full);
+
+    thumbnails.forEach((thumb, index) => {
+        thumb.addEventListener('click', function() {
+            const imgSrc = this.dataset.full;
+            mainImage.src = imgSrc;
+            currentImageIndex = index;
+
+            thumbnails.forEach(t => t.classList.remove('active'));
+            this.classList.add('active');
+
+            scrollToActiveThumbnail();
+        });
+    });
+
+    function showNextImage() {
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        updateMainImage();
+    }
+
+    function showPrevImage() {
+        currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+        updateMainImage();
+    }
+
+    function updateMainImage() {
+        mainImage.src = images[currentImageIndex];
+        thumbnails.forEach((thumb, index) => {
+            thumb.classList.toggle('active', index === currentImageIndex);
+        });
+        scrollToActiveThumbnail();
+    }
+
+    nextBtn.addEventListener('click', showNextImage);
+    prevBtn.addEventListener('click', showPrevImage);
+
+    function openLightbox(index) {
+        currentImageIndex = index;
+        lightboxImg.src = images[currentImageIndex];
+        lightbox.classList.add('active');
+        document.body.classList.add('no-scroll');
+    }
+
+    function closeLightbox() {
+        lightbox.classList.remove('active');
+        document.body.classList.remove('no-scroll');
+    }
+
+    mainImage.addEventListener('click', () => openLightbox(currentImageIndex));
+    lightboxClose.addEventListener('click', closeLightbox);
+
+    lightboxNext.addEventListener('click', () => {
+        showNextImage();
+        lightboxImg.src = images[currentImageIndex];
+    });
+
+    lightboxPrev.addEventListener('click', () => {
+        showPrevImage();
+        lightboxImg.src = images[currentImageIndex];
+    });
+
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+            closeLightbox();
+        }
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (lightbox.classList.contains('active')) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            } else if (e.key === 'ArrowRight') {
+                showNextImage();
+                lightboxImg.src = images[currentImageIndex];
+            } else if (e.key === 'ArrowLeft') {
+                showPrevImage();
+                lightboxImg.src = images[currentImageIndex];
+            }
+        }
+    });
+
+    function scrollToActiveThumbnail() {
+        const activeThumb = document.querySelector('.thumbnail.active');
+        if (!activeThumb || window.innerWidth <= 768) return;
+
+        const thumbRect = activeThumb.getBoundingClientRect();
+        const containerRect = activeThumb.parentElement.getBoundingClientRect();
+
+        if (thumbRect.left < containerRect.left || thumbRect.right > containerRect.right) {
+            activeThumb.scrollIntoView({
+                behavior: 'smooth',
+                block: 'nearest',
+                inline: 'center'
+            });
+        }
+    }
+
+    window.addEventListener('resize', scrollToActiveThumbnail);
+
+    const callBtn = document.getElementById('callBtn');
+    const emailBtn = document.getElementById('emailBtn');
+    const phoneInfo = document.getElementById('phoneInfo');
+    const emailInfo = document.getElementById('emailInfo');
+
+    callBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        emailInfo.classList.remove('show');
+        phoneInfo.classList.toggle('show');
+    });
+
+    emailBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        phoneInfo.classList.remove('show');
+        emailInfo.classList.toggle('show');
+    });
+
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.button-group')) {
+            phoneInfo.classList.remove('show');
+            emailInfo.classList.remove('show');
+        }
+    });
+</script>
 </body>
 </html>
