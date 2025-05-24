@@ -281,6 +281,58 @@ footer a:hover {
     margin-right: 8px;
     color: var(--primary-green);
 }
+/* RESET podstawowy */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* DESKTOP: zdjęcia bez odstępów */
+.image-row {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  overflow: hidden;
+  gap: 0; /* <--- brak odstępów */
+}
+
+.image-row img {
+  width: 25%;               /* 4 zdjęcia = 25% */
+  height: 200px;
+  object-fit: cover;
+  display: block;           /* usuń marginesy między inline obrazkami */
+  border-radius: 0;         /* brak zaokrągleń — opcjonalnie */
+}
+
+/* TELEFON: poziomy scroll + odstęp */
+@media (max-width: 768px) {
+  .image-row {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 10px;
+    padding: 0 10px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .image-row img {
+    flex: 0 0 80vw;             /* responsywna szerokość */
+    height: 200px;
+    scroll-snap-align: center;
+    border-radius: 8px;
+    width: auto;                /* nadpisujemy 25% */
+  }
+
+  .image-row::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+
+
+
 
 @media (max-width: 768px) {
     .container {
