@@ -339,7 +339,7 @@ body {
 
 @media (max-width: 768px) {
     .container {
-        padding: 15px;
+        padding: 10px;
     }
     
     header h1 {
