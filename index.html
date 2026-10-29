@@ -6,6 +6,7 @@
     <title>Krobia Osiedle Zielone- działki budowlane na sprzedaż</title>
     <link rel="preload" as="image" href="images/palac.webp">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
@@ -202,32 +203,6 @@
         </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-b3/js/all.min.js"></script>
-    <script>
-        const tabs = document.querySelectorAll('nav a[data-tab]'); // Wybieramy tylko linki z atrybutem data-tab
-        const tabContents = document.querySelectorAll('main section');
-        const kontaktLink = document.querySelector('nav a[href="kontakt.html"]'); // Wybieramy link "Kontakt"
-
-        tabs.forEach(tab => {
-            tab.addEventListener('click', function(event) {
-                event.preventDefault();
-                const targetId = this.getAttribute('data-tab');
-
-                tabs.forEach(t => t.classList.remove('active-tab'));
-                tabContents.forEach(content => content.classList.remove('active'));
-
-                this.classList.add('active-tab');
-                document.getElementById(targetId).classList.add('active');
-            });
-        });
-
-// Domyślnie pokaż pierwszą zakładkę (Działki)
-const firstTab = document.querySelector('nav a[data-tab]');
-if (firstTab) {
-    const targetId = firstTab.getAttribute('data-tab');
-    firstTab.classList.add('active-tab');
-    document.getElementById(targetId).classList.add('active');
-}
-    </script>
+    <script src="script.js" defer></script>
 </body>
 </html>
